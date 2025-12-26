@@ -251,7 +251,7 @@ const EditProfile = ({ user, onUpdateUser, onClose }) => {
         payload.profilePhoto = profilePhoto;
       }
 
-      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api'}/users/me`, {
+      const res = await fetch(`${process.env.REACT_APP_API_BASE_URL || 'https://cookhub-backend.onrender.com/api'}/users/me`, {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',

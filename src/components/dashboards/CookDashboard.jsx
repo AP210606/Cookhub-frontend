@@ -18,7 +18,7 @@ import {
 import { Pie, Bar } from 'react-chartjs-2';
 
 // API base: prefer environment variable, fall back to localhost dev API
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5000/api';
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'https://cookhub-backend.onrender.com/api';
 
 ChartJS.register(
   ArcElement,
